@@ -7,9 +7,11 @@ This project compares two graph neural network approaches to movie recommendatio
 
 The task is formulated as **binary link prediction**. Observed user-movie interactions are treated as positive edges, while unobserved user-movie pairs are sampled as negative edges. The models predict whether an interaction between a user and a movie is likely to exist.
 
-## Data
+## Dataset
 
-**MovieLens 100K** dataset available through PyTorch Geometric
+The comparison is performed using **MovieLens 100K** dataset available through PyTorch Geometric
+
+https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MovieLens100K.html
 
 ## Models
 
@@ -48,8 +50,3 @@ The R-GCN improves test accuracy by approximately **2.0 percentage points**. Thi
 ## Technologies
 
 Python, PyTorch, PyTorch Geometric, NumPy, scikit-learn
-
-## Dataset
-
-MovieLens 100K:  
-https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.MovieLens100K.html
